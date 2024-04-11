@@ -1626,7 +1626,7 @@ overflow-y: auto;
 .card {
   width: 200px;
 
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
   margin: 0 10px;
   display: flex;
   justify-content: center;
@@ -2314,11 +2314,15 @@ button {
   .macbook-air-36-inner {
     min-width: 100%;
   }
+
   .cards {
     display: flex;
-flex-direction: column;
-    overflow: hidden;
-  }
+flex-direction:column;
+    /* overflow: hidden; */
+    flex:1,1,100%;
+    overflow-x: hidden;
+  } 
+ 
   
   .card {
     width: 200px;
@@ -2329,11 +2333,41 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-  }
-  
+  } 
+ 
   button {
     margin-top: 20px;
+  } 
+  .rectangle-parent2new{
+    height: 450px;
+
   }
+  .rectangle-parent2new .frame-parent10{
+ width:170px;
+ height: 400px;
+ margin-top: 100px;
+ 
+
+  }
+  /* .we-used-to{
+    height:1000px;
+  } */
+.manish-nair-parents{
+  width:200px;
+}
+  .I-was{
+   height:700px;
+   width: 240px;
+   margin-left:-20px;
+
+   align-items: left;
+   overflow-y: visible;
+  }
+
+  /* .frame-parent10{
+    align-items: center;
+    margin-top: 200px;
+  } */
   .macbook-air-36 {
     gap: 189px 94px;
     padding-left: var(--padding-21xl);
@@ -2376,6 +2410,16 @@ flex-direction: column;
   .buy-exclusive-videos {
     font-size: var(--font-size-10xl);
     line-height: 38px;
+  }
+  .social-mediabro-wrapper img{
+    height:200px;
+    width: 250px;
+  }
+  .engagements-on-social{
+    margin-top:-50px;
+  }
+  .stories-and-other{
+    margin-top:-30px;
   }
   .empowering-creators-connectin {
     font-size: var(--desktop-b1-regular-size);
@@ -2557,6 +2601,19 @@ flex-direction: column;
     margin-left: 5px;
     width:40px;
   }
+  .TableHead{
+   width:400px;
+   margin-left:-20px;
+  }
+  .tab-right{
+   margin-left:-14px;
+  }
+  .tab-right tr td{
+    padding: 16px;
+  }
+  .SecText{
+    margin-left:8px;
+  }
 
 
   /* .tab-left{
@@ -2610,17 +2667,19 @@ margin-left: 40px;
   .see-some-of {
     font-size: 16px;
   }
-  .group-div card{
+
+  
+  /* .group-div card{
     display: flex;
     flex-direction: column-reverse;
-  }
+  } */
 
-  .card {
+  /* .card {
     display: flex;
     flex-direction:column ;
     flex: 2 2 100%;
 
     /* One card per row on smaller screens */
-    max-width: 100%;
-  }
+    /* max-width: 100%; */
+  /* }  */
 }
