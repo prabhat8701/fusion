@@ -36,3 +36,10 @@ burgerMenu.addEventListener('click', () => {
     dropdownMenu.style.display = 'none';
   }
 });
+document.addEventListener('click', (event) => {
+  // Check if the clicked element is not part of the dropdown menu
+  if (!dropdownMenu.contains(event.target) && !burgerMenu.contains(event.target)) {
+    dropdownMenu.style.display = 'none'; // Close the dropdown menu
+    dropdownMenu.classList.remove('dropdown-toggle'); // Remove the 'dropdown-toggle' class
+  }
+});
