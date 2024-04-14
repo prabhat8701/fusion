@@ -1465,6 +1465,7 @@ overflow-y: auto;
   height: 52px;
   flex: 1;
   position: relative;
+  display: none;
 }
 .frame-child4 {
   position: absolute;
@@ -1501,6 +1502,7 @@ overflow-y: auto;
   justify-content: center;
   padding: var(--padding-3xs) var(--padding-4xs);
   z-index: 1;
+  display: none;
 }
 .frame-parent8 {
   cursor: pointer;
@@ -1510,6 +1512,7 @@ overflow-y: auto;
   height: 52px;
   flex: 1;
   position: relative;
+  display: none;
 }
 .frame-parent6,
 .frame-parent7 {
@@ -1618,12 +1621,33 @@ overflow-y: auto;
   min-width: 472px;
   min-height: 320px;
 }
-.cards {
-  display: flex;
 
+.rectangle-parent3new {
+  width: 472px;
+  border-radius: var(--br-base);
+  background-color: var(--light-white);
+  box-shadow: 0 2px 8px rgba(73, 73, 73, 0.2);
+  border: 1px solid var(--stroke-box-stroke);
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: var(--padding-13xl);
+  min-width: 472px;
+  min-height: 320px;
+ 
 }
 
+
+.cards {
+  display: flex;
+  overflow-x: auto;
+scroll-behavior: smooth;
+
+}
+.cards::-webkit-scrollbar{
+  width: 0;
+}
 .card {
+flex: 0 0 calc(100%/3);
   width: 200px;
 
   /* background-color: #f0f0f0; */
@@ -1722,7 +1746,7 @@ button {
   max-width: 100%;
 }
 .frame-parent5 {
-  flex: 1;
+  flex: 3 3 100%;
   flex-direction: column;
   gap: var(--gap-29xl);
 }
